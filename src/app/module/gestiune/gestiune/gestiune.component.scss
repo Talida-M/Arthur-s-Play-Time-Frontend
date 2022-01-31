@@ -1,0 +1,50 @@
+.container{
+    visibility:hidden;
+}
+.title2{
+  color: aliceblue;
+  text-shadow:
+  0 0 7px rgb(240, 188, 188),
+  0 0 10px rgb(247, 225, 225),
+  0 0 21px rgb(243, 209, 209),
+  0 0 42px rgb(243, 118, 129),
+  0 0 82px #f09,
+  0 0 92px #f09,
+  0 0 102px rgb(224, 89, 89),
+  0 0 151px rgb(248, 239, 245);
+}
+#mySidenav a {
+    position: absolute;
+    left: -137px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 250px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    
+  }
+  
+  #mySidenav a:hover {
+    left: 0;
+    background-color: #555
+  }
+
+.Meniu  {
+    margin-top: 60px;
+    color: rgb(247, 241, 242);
+    display:flexbox;
+    list-style: none;
+    top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.Meniu a:visited{
+  color: white;
+  background-color:rgb(47, 48, 48);
+}
+.Meniu a:hover{
+  color: rgb(122, 2, 2);
+  background-color:rgb(245, 179, 193);
+}

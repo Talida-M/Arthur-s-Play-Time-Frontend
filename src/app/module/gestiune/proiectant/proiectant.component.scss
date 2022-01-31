@@ -1,0 +1,21 @@
+.container{
+    visibility:hidden;
+}
+
+.Meniu  {
+    margin-top: 60px;
+    color: rgb(247, 241, 242);
+    display:flexbox;
+    list-style: none;
+    top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.Meniu a:visited{
+  color: white;
+  background-color:rgb(47, 48, 48);
+}
+.Meniu a:hover{
+  color: rgb(122, 2, 2);
+  background-color:rgb(245, 179, 193);
+}

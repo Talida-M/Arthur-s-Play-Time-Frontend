@@ -1,0 +1,59 @@
+<table mat-table [dataSource]="comenzi" class="mat-elevation-z8">
+
+    
+    <ng-container matColumnDef="idComanda">
+      <th mat-header-cell *matHeaderCellDef> Id Comanda </th>
+      <td mat-cell *matCellDef="let element"> {{element.idComanda}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="data">
+      <th mat-header-cell *matHeaderCellDef> Data </th>
+      <td mat-cell *matCellDef="let element"> {{element.data}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="valoare">
+      <th mat-header-cell *matHeaderCellDef> Valoare </th>
+      <td mat-cell *matCellDef="let element"> {{element.valoare}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="statusTotal">
+        <th mat-header-cell *matHeaderCellDef>Status Total</th>
+        <td mat-cell *matCellDef="let element"> {{element.statusTotal}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="clientId">
+        <th mat-header-cell *matHeaderCellDef>Id Client</th>
+        <td mat-cell *matCellDef="let element"> {{element.idClient}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="produse">
+        <th mat-header-cell *matHeaderCellDef>Produse</th>
+        <td mat-cell *matCellDef="let element" (click)="goToProduse(element.idComanda)">
+          <mat-icon>
+            shopping_basket
+          </mat-icon>
+        </td>
+      </ng-container>
+  
+  
+  
+     
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <div class = "add">
+    <form [formGroup] ="statusForm" class="form">
+      <mat-form-field appearance="outline"> 
+          <mat-label>Id</mat-label>
+          <input matInput placeholder="id" formControlName="id"/>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline"> 
+          <mat-label>Status</mat-label>
+          <input matInput placeholder="status"  formControlName="status"/>
+      </mat-form-field>
+  </form>
+  <button (click) = "update()">Schimba Status</button>
+  </div>
+  
