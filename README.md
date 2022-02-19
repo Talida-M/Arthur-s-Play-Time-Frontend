@@ -1,3 +1,7 @@
+#Some App Photos
+![1](https://user-images.githubusercontent.com/75331740/154821739-e5fa8f4e-b2eb-4e96-9fc5-6e546baff169.jpeg)
+![2](https://user-images.githubusercontent.com/75331740/154821741-34a2cd00-49fe-4faf-89ff-4ffc42864b2f.jpeg)
+
 # ProiectASP
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
